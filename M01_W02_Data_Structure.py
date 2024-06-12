@@ -2,8 +2,6 @@
 chuyển từ trái sang phải. Mỗi lần dịch chuyển 1 vị trí sang phải có thể nhìn thấy
 đươc k số trong num_list và tìm số lớn nhất trong k số này sau mỗi lần trượt k phải
 lớn hơn hoặc bằng 1"""
-
-
 def find_max(lst):
     result = -999999
     for x in lst:
@@ -26,8 +24,6 @@ def sliding(num_list, k):
 """2. Thực hiện theo các yêu cầu sau.
 Viết function trả về một dictionary đếm số lượng chữ xuất hiện trong một từ, với key là chữ cái
 và value là số lần xuất hiện"""
-
-
 def count_letter(text):
     list_letter = []
     dict_letter = dict()
@@ -46,8 +42,6 @@ def count_letter(text):
 """3. Thực hiện theo các yêu cầu sau.
 Viết function đọc các câu trong một file txt, đếm số lượng các từ xuất hiện và trả về một dictionary
 với key là từ và value là số lần từ đó xuất hiện."""
-
-
 def count_word(dir):
     list_word = []
     dict_word = dict()
@@ -67,13 +61,11 @@ def count_word(dir):
 
 """4. Khoảng cách Levenshtein.
 Viết chương trình tính khoảng cách chỉnh sửa tối thiểu Levenshtein."""
-
-
 def distance_levenshtein(source, target):
     """Bước 1: Xây dựng ma trận lưu trữ có số hàng là M và số cột là N. Trong đó M là số lượng
-các ký tự trong từ source + 1, N là số lượng các ký tự trong từ target + 1. Vì vậy với ví dụ
-'yu' và 'you', ta có ma trận được biểu diễn như hình 1. Ký hiệu '#' đại diện cho chuỗi rỗng.
-Gọi là ma trận D."""
+  các ký tự trong từ source + 1, N là số lượng các ký tự trong từ target + 1. Vì vậy với ví dụ
+  'yu' và 'you', ta có ma trận được biểu diễn như hình 1. Ký hiệu '#' đại diện cho chuỗi rỗng.
+  Gọi là ma trận D."""
     d = []
     m = len(source) + 1
     n = len(target) + 1
