@@ -42,7 +42,7 @@ def load_vocab(file_path):
 
 # current_path = Path.cwd()
 # file_path = str(current_path) + "/source/data/vocab.txt"
-file_path = "./data/vocab.txt"
+file_path = "./source/data/vocab.txt"
 vocabs = load_vocab(file_path)
 
 
