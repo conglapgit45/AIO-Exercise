@@ -1,4 +1,6 @@
 import streamlit as st
+from pathlib import Path
+
 
 def levenshtein_distance(token1, token2):
     distances = [[0] * (len(token2) + 1) for i in range(len(token1) + 1)]
@@ -38,7 +40,10 @@ def load_vocab(file_path):
     return words
 
 
-vocabs = load_vocab(file_path='data/vocab.txt')
+current_path = Path.cwd()
+file_path = str(current_path) + r"\data\vocab.txt"
+print(file_path)
+vocabs = load_vocab(file_path)
 
 def main():
     st.title("Word Correction using Levenshtein Distance")
