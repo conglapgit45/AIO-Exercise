@@ -40,9 +40,10 @@ def load_vocab(file_path):
     return words
 
 
-current_path = Path.cwd()
-file_path = str(current_path) + r"\data\vocab.txt"
-print(file_path)
+# current_path = Path.cwd()
+# file_path = str(current_path) + r"\data\vocab.txt"
+# print(file_path)
+file_path = "data/vocab.txt"
 vocabs = load_vocab(file_path)
 
 def main():
